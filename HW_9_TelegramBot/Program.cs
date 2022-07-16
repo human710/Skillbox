@@ -9,7 +9,7 @@ namespace HW_9_TelegramBot
             //new TelegrammClass();
             try
             {
-                TelegramBotClass bot = new TelegramBotClass(token: "");
+                TelegramBotClass bot = new TelegramBotClass(token: ""); //Здесь был токен :)
                 bot.GetUpdates();
             }
             catch (Exception e)

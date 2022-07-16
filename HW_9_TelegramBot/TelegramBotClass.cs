@@ -92,9 +92,13 @@ namespace HW_9_TelegramBot
 
             switch (update.Type)
             {
+                    
                 case Telegram.Bot.Types.Enums.UpdateType.Message:
                     var text = update.Message.Text;
-
+                    if (!Directory.Exists("DownloadFiles"))
+                    {
+                        Directory.CreateDirectory("DownloadFiles");
+                    }
                     switch (text)
                     {
                         case "/start":
