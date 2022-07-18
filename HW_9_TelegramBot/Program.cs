@@ -6,16 +6,15 @@ namespace HW_9_TelegramBot
     {
         static void Main(string[] args)
         {
-            //new TelegrammClass();
             try
             {
-                TelegramBotClass bot = new TelegramBotClass(token: ""); //Здесь был токен :)
+                TelegramService bot = new TelegramService(token: ""); //Здесь был токен :)
                 bot.GetUpdates();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-                
+
             }
         }
     }
